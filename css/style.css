@@ -129,29 +129,19 @@ img {
  ************************************************/
 
 @media screen and (max-width: 480px) {
-
+    
     div.container {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
         max-width: 480px;
     }
-    
+
+    div.container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
     h2 {
         display: flex;
-        margin-left: 6rem;
-    }
-
-    h3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    p.text {
-        display: flex;
-        flex-direction: column;
     }
 
     div.row {
@@ -162,16 +152,18 @@ img {
     div.col {
         display: flex;
         flex-direction: column;
-
     }
 
     div.card {
         display: flex;
         flex-direction: column;
+        margin-bottom: 2.5rem;
     }
 
-    section.why-us {
-        background-color: #222222;
-    }
+}
 
+@media screen and (max-width: 768px) {
+    div.container {
+        max-width: 768px;
+    }
 }
