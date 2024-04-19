@@ -131,23 +131,29 @@ img {
 @media screen and (max-width: 480px) {
 
     h2 {
+        display: flex;
         padding-left: 4.5rem;
     }
 
     h3 {
-        padding-left: 10rem;
+        display: flex;
+        margin-left: 10rem;
+    }
+
+    p.text {
+        display: flex;
+        flex-direction: column;
     }
 
     div.row {
         display: flex;
         flex-direction: column;
-        align-items: start;
     }
 
     div.col {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+
     }
 
     div.card {
@@ -155,4 +161,7 @@ img {
         flex-direction: column;
     }
 
+    div.card img {
+        margin-top: 2.5rem;
+    }
 }
