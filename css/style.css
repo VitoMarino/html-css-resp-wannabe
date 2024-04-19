@@ -130,14 +130,23 @@ img {
 
 @media screen and (max-width: 480px) {
 
+    div.container {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 480px;
+    }
+    
+
     h2 {
         display: flex;
-        padding-left: 4.5rem;
+        margin-left: 6rem;
     }
 
     h3 {
         display: flex;
-        margin-left: 10rem;
+        justify-content: center;
+        align-items: center;
     }
 
     p.text {
@@ -161,7 +170,8 @@ img {
         flex-direction: column;
     }
 
-    div.card img {
-        margin-top: 2.5rem;
+    section.why-us {
+        background-color: #222222;
     }
+
 }
